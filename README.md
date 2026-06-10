@@ -27,11 +27,17 @@ Modelagem como rede de fluxo
 O problema foi modelado como uma rede de fluxo em que cada sala representa um vértice e cada teleporte representa uma aresta direcionada com capacidade igual a 1. Dessa forma, um mesmo teleporte só pode ser utilizado por uma única rota.
 
 Origem, sorvedouro, vértices, arestas e capacidades
+
 Origem: sala 1.
+
 Sorvedouro: sala n.
+
 Vértices: salas do jogo.
+
 Arestas: teleportes direcionados.
+
 Capacidades: todas iguais a 1.
+
 Algoritmo utilizado
 
 Foi utilizado o algoritmo Ford-Fulkerson, buscando caminhos aumentantes até que não exista mais caminho entre a origem e o sorvedouro.
@@ -49,9 +55,13 @@ Reconstrução dos caminhos
 Após calcular o fluxo máximo, cada rota é recuperada utilizando as arestas com fluxo positivo, evitando que uma mesma aresta seja utilizada em mais de um caminho.
 
 Complexidade
+
 Tempo: O(E × Fluxo Máximo)
+
 Memória: O(V + E)
+
 Casos especiais
+
 Não existir caminho entre origem e destino (fluxo igual a 0);
 Existirem múltiplas soluções válidas;
 Reconstrução correta das rotas sem reutilização de arestas.
