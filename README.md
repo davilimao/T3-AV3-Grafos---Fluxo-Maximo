@@ -55,6 +55,7 @@ Casos especiais
 Não existir caminho entre origem e destino (fluxo igual a 0);
 Existirem múltiplas soluções válidas;
 Reconstrução correta das rotas sem reutilização de arestas.
-Evidência
+
+Evidência:
 
 <img width="524" height="621" alt="Captura de tela 2026-06-09 142335" src="https://github.com/user-attachments/assets/df6d95ff-def3-4c62-a9df-c3a97c72548c" />
